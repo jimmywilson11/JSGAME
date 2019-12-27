@@ -12,7 +12,9 @@ document.getElementById('check').onclick = function () {
         var out = document.getElementById('out');
 
         if (usernum == number) {
-            out.innerHTML = 'Congratulations you win!';
+            alert('Congratulations you win! Wanna try again?');
+            location.reload();
+            document.getElementById("mynum").value = "";
         } else if (usernum > number) {
             out.innerHTML = 'Your number is more. Try again.';
         } else if (usernum < number) {
@@ -24,5 +26,6 @@ document.getElementById('check').onclick = function () {
     } else {
         alert('You lose! Wanna try again?')
         location.reload();
+        document.getElementById("textInput").value = "";
     }
 }
