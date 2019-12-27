@@ -23,6 +23,6 @@ document.getElementById('check').onclick = function () {
         count = count - 1;
     } else {
         alert('You lose! Wanna try again?')
-        
+        location.reload();
     }
 }
