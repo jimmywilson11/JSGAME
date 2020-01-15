@@ -128,13 +128,17 @@ body .game input {
   position: relative;
   left: 15%;
   padding: 3px 5px;
-  width: 70%;
+  width: 72%;
   font-size: 25px;
   margin-bottom: 25px;
   background-color: transparent;
   border-style: none;
   border-bottom: 3px solid #E31529;
   color: #FFF;
+}
+
+body .game input::-webkit-outer-spin-button, body .game input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 body .game button {
