@@ -1,15 +1,15 @@
-var number = Math.floor(Math.random() * 1000) + 1;
+let number = Math.floor(Math.random() * 1000) + 1;
 console.log(number);
-var count = 9;
+let count = 9;
 
 
 
 document.getElementById('check').onclick = function () {
 
     if (count > 0) {
-        var usernum = document.getElementById('mynum').value;
+        let usernum = document.getElementById('mynum').value;
         usernum = parseInt(usernum);
-        var out = document.getElementById('out');
+        let out = document.getElementById('out');
 
         if (usernum == number) {
             alert('Congratulations you win! Wanna try again?');
